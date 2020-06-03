@@ -1,0 +1,310 @@
+body {
+	margin: 10px;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  /*top: 100%;
+  left: 50%;*/
+  overflow: hidden;
+/*  transform: translateX(-50%) translateY(-50%);*/
+  z-index: 0;
+}
+
+
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
+/*    cursor:pointer;
+*/   /* display:inline-block;*/
+    /*color:#19b964;
+    font-size:2em;*/
+    border-bottom:2px solid #19b964;
+}
+
+.zone:hover {
+   
+}
+
+/* MENU */
+#navbar {
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	z-index: 20;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 98.8%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+.grudento {
+	position: fixed;
+	top: 0;
+	width: 98.8%;
+
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	font-size: 1.3em;
+	margin: 0;
+
+}
+
+.contato {
+	margin-left: auto;
+	padding: 10px 10px 10px 0px;
+}
+
+li {
+	padding: 10px 40px 10px 0px;
+}
+
+a {
+	color: #19b964;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.4s;
+	text-decoration: none;
+	padding: 2px;
+	background-color: transparent;
+}
+
+a:hover {
+	color: white;
+	background-color: #19b964;
+	
+}
+
+
+ul {
+	padding: 0px 0px 0px 10px;
+}
+
+/* cover */
+
+.container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	height: 80vh;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.selvi {
+	z-index: 10;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
+.logo {
+	/*max-height: 35vh;*/
+	height: auto;
+	width: 100%;
+	max-width: 50vw;
+
+}
+
+/* grid */
+
+.sobre {
+	padding: 10px 0px 20px 0px;
+	font-size: 4em;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: rgb(80, 80, 80);
+	line-height: 110%;
+
+}
+
+.textosobre {
+	width: 80vw;
+}
+
+.gridEnvelope {
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+
+}
+
+.gridEnvelope a {
+	color: inherit;
+}
+
+.gridEnvelope a:hover {
+	background-color: #d2f9e4;
+	/*border:4px solid #19b964;
+	color: white;*/
+
+}
+
+.imagens {
+	width: 100%;
+	height: 300px;
+	
+	object-fit: cover;
+}
+
+.box{ 
+	background-color: white;
+	padding: 10px;
+	margin: 0px;
+	border:2px solid #19b964;
+
+ }
+
+ .titulo {
+ 	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #19b964;
+	padding-top: 5px;
+	border-bottom: 2px solid #19b964;
+	font-size: 1.8em;
+	line-height: 105%;
+ }
+
+
+
+ .textinho {
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight: 400;
+ 	color: rgb(80, 80, 80);
+ 	font-size: 1.3em;
+ 	padding-top: 5px;
+ 	font-weight: 400;
+
+ }
+
+ footer {
+ 	text-align: right;
+ 	background-color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #19b964;
+	padding: 5px;
+ }
+
+
+
+ /* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  display: none;
+  font-size: 1.3em;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #19b964;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #19b964;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (max-width: 1150px){
+		.menu{
+			display: none;
+		}
+
+}
+
+@media only screen and (max-width: 1150px){
+		.custom-select {
+			display: flex;
+		}
+
+}
+
+/*@media only screen and (max-width: 700px){
+		video {
+			object-fit: cover;
+			height: 100%;
+			width: auto;
+		}
+
+}*/
+
+
+@media only screen and (max-width: 700px){
+		.logo {
+			height: auto;
+			width: 100%;
+			max-width: 80vw;
+		}
+
+}
+@media only screen and (max-width: 700px){
+		.container {
+			height: 50vh;
+		}
+
+}
