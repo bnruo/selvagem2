@@ -294,15 +294,15 @@ ul {
 }*/
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1150px){
 		.logo {
 			height: auto;
 			width: 100%;
-			max-width: 80vw;
+			max-width: 60vw;
 		}
 
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1150px){
 		.container {
 			height: 50vh;
 		}
